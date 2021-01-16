@@ -1,0 +1,32 @@
+
+
+.parent{
+    display: flex;
+    border: 3px solid;
+    border-color: red;
+    flex-direction: column;
+    width: 70%;
+    max-width: 800px;
+    justify-content: center;
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+
+}
+
+.child{
+    background-color: skyblue;
+    text-align: center;
+    color: white;
+    height: 80px;
+    margin: 5px;
+    padding-top: 30px;
+}
+
+.box{
+    width: 25%;
+    vertical-align: middle;
+    align-self: flex-end;
+    
+
+}

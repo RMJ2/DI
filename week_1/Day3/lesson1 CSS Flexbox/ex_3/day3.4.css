@@ -1,0 +1,38 @@
+
+
+.parent{
+    display: flex;
+    border: 3px solid;
+    border-color: orange;
+    flex-direction: row;
+    width: 100%;
+    max-width: 800px;
+    /* justify-content: center; */
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+
+}
+
+.child{
+    background-color: skyblue;
+    text-align: center;
+    color: white;
+    height: 50px;
+    width: 40%;
+    margin: 5px;
+    padding-top: 30px;
+    
+}
+
+.logo{
+    background-color: rgb(179, 17, 179);
+    width: 20%;
+}
+
+.team{
+    background: rgb(150, 150, 233);
+}
+.products{
+    background-color: rgb(247, 152, 152);
+}

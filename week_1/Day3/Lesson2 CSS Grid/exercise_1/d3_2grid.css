@@ -1,0 +1,24 @@
+.container{
+
+    display: grid;
+    grid-template-areas: 
+    right right right right right right                   ;
+    grid-gap: 20px;
+}
+
+.header{
+    background-color: lightblue;
+}
+
+.main{
+    background-color: lightcoral;
+}
+
+.right{
+    background-color: lightgray;
+
+}
+
+.footer{
+    background-color: lightgreen;
+}

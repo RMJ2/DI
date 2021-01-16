@@ -1,0 +1,55 @@
+
+
+/* TODAY IS THE FIRST DAY I STARTED TO UNDERSTAND WHAT CSS DOES/HOW TO USE IT */
+/* see screenshots for simplified version */
+
+.container1{
+    display: flex;
+    justify-content: space-between;
+    /* flex-flow: row; */
+    border: 1px solid black;
+}
+
+.item{
+    background-color: yellow;
+    border: 2px solid black;
+    margin: 10px 10px 10px 10px;
+    padding: 30px 30px;
+    
+}
+/* Struggling to get the same size yelow boxes... */
+.item1{
+    background-color: yellow;
+    border: 2px solid black;
+    margin: 20px 20px 20px 20px;
+    padding: 30px 30px;
+    block-size: 0.5vh; 
+    
+}
+
+.left{
+    height: 100%;
+    width: 20%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+.middle{
+    align-items: center;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+
+
+.right{
+    height: 100%;
+    width: 20%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+
+}

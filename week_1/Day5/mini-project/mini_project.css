@@ -1,0 +1,37 @@
+
+
+#btn-learn{
+    background-color: blue;
+    color: white;
+}
+
+.container1{
+    height: 400px;
+   
+}
+
+.jumbotron{
+    align-self: center;
+}
+
+
+#btn-light{
+    border: solid 1px black;
+}
+
+#contact-badge {
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.heading-padding{
+    padding: 30px;
+}
+
+.brand-margin{
+    margin-left: 80px;
+}
+
+.margin-move{
+    margin-right: 80px;
+}
