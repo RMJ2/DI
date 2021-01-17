@@ -1,0 +1,103 @@
+JAVASCIPT TYPES 
+----------------
+
+1. NUMBER                           //  1000 111 2 9+9 
+2. STRING                           //  'YYYY' + " " + '666'
+3. BOOLEAN                          //  true false 1 0          
+4. UNDEFINED                        // let a; 
+5. NULL                             // 
+6. SYMBOL (NEW IN ECMASCRIPT 6)     //  
+7. OBJECT                           //
+
+JAVASCRIPT COMPARISONS 
+_______________________
+
+Equals           Sum             Answer             Explain
+
+==               1==1            true               COMPARISONS
+
+!==              1!==1            false              not equal to   (opposite to ===)           
+
+===              1==='1'         false 
+
+<= 
+
+>=
+
+<
+
+>
+
+
+JAVASCIPT VARIABLES (var)
+------------------------
+
+var             old way                         
+let             (new in ECMA Script 6)          
+const           (new in ECMA Script 6)          
+
+var mynum1 = 20; 
+let mystring = 'haha';
+const MYCONST = 'my const variable';        MYCONST should be capitals
+let mystr2;                                 decleration without assignment (#4 undefined)
+mystr2 = 'jjjjjj';                          declared 
+mystr2 = 80; 
+MYCONST = 'iiiiiiiii'                       name in uppercase 
+
+
+
+JAVASCRIPT CONDITIONALS 
+-----------------------
+
+if 
+else 
+else if 
+
+Example: ---------
+
+let a = 5;
+let b = 6; 
+if (1===1){
+    console.log("true 1 is equal 1")
+}
+
+else{
+    console.log ('false');
+}
+
+else if {
+
+}
+
+
+JAVASCIPT LOGICAL OPERATORS 
+--------------------------------
+
+&&      // and 
+||      //  or
+!       // not 
+
+
+JAVASCIPT FUNCTIONS 
+
+ARRAYS 
+
+let arr = [1, 2, 5, 6, 7];
+console.log (arr[3]); 
+
+
+let arr = [10, 
+            9, 
+            [6,7]
+            ];
+console.log(arr[2][1]);             this equals number 6 or item 2 (0,1,2) (0,1) [2, 1]
+
+
+let arr = [10, 
+            9, 
+            [6,7,
+            [8,4,2]
+            ]
+            ];
+console.log(arr[2][2][1]);
+
