@@ -147,3 +147,23 @@
       color: white;
   }
 
+
+  .container12 {
+    display: inline-block;
+    
+    border: 1px solid black;
+    overflow: hidden;            /* clip the excess when child gets bigger than parent */
+  }
+  .container12 img {
+    display: block;
+    transition: transform .4s;   /* smoother zoom */
+  }
+  .container12:hover img {
+    transform: scale(1.3);
+    transform-origin: 50% 50%;
+  }
+
+
+
+
+  
