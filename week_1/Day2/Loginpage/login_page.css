@@ -1,0 +1,111 @@
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+.heading{
+    text-align: center;
+}
+
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: purple;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+
+  .page-left{
+      background-color: #f1f1f1;
+  }
+
+
+  
+  .page-right{
+      background-color: purple;
+      color: white;
+      text-align: center;
+      padding-top: 120px;
+
+  }
+
+  .fa-user-plus{
+      font-size: 80px;
+      padding-bottom: 20px;
+      
+  }
+
+  .btn{
+      width: 200px;
+     
+      border: 2px solid white;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  }
+
+ 
+  .social-icons {
+    text-align: center;
+    }  
+  .social-icons li {
+    display:inline-block;
+    list-style-type:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    }
+  .social-icons li a {
+    border-bottom: none;
+    }
+  .social-icons li i {
+    width:30px;
+    height:30px;
+    margin-right: 35px;
+    font-size: 25px;
+  }

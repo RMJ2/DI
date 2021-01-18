@@ -9,6 +9,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> 
 
   <title>RMJ2 Group</title>
 </head>
@@ -17,15 +18,17 @@
 
   <!-- Start of Navbar -->
   <div>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand  col-md-2" href="#">RMJ2 Group</a>
+          <a class="navbar-brand  col-md-2" href="#home">RMJ2 Group  <i class="fas fa-code"></i>
+
+          </a>
           <ul class="navbar-nav navibar col-md-10 me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active grow" aria-current="page" href="#about">About</a>
@@ -52,12 +55,13 @@
   <header class="header">
     <div class="image-opacity row">
 
-      <div class="description col-md-8 offset-md-2 text-center grow " style="border: solid 1px black;">
-        <h1>Hello, Welcome to my my world.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quasi suscipit nihil quisquam
-            distinctio,
-            quas at ex illum asperiores veniam dolor! Eum laboriosam nisi neque unde dicta. Fuga, quod recusandae?
+      <div class="description col-md-4 offset-md-4 text-center grow " style="border: solid 1px black;">
+        <h1 class="color-headings" >Welcome</h1>
+          <p>Here you will find more information about RMJ2. Feel free to look through, play around and browse.  If you have any questions you can contact me below. 
           </p>
+          <button type="button" class="btn btn-primary">Portfolio
+            <a href="#portfolio"></a>
+          </button>
         
         
       </div>
@@ -71,21 +75,38 @@
 
   <!-- start of scrollspy info -->
   
-  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0">
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0"></div>
 
     <!-- About Me -->
     <article id="about-me" >
-      <h2 class="article-heading" id="about" style="border: solid 1px black;">About Me</h2>
-          <div id="nav-bar-about" style="border: solid 1px black;">
+      <h2 class="article-heading color-headings" id="about" style="border: solid 1px black;">About Me</h2>
+          <div class="container" id="nav-bar-about" style="border: solid 1px black;">
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <figure>
+                  <img src="Josh_headshot_round.png" alt="Josh Head Shot" class="img-fluid">
+                </figure>
+                <figcaption>
+                  <span class="text-justify text-muted " id="job-title"> Student Developer - (coming soon)</span>
+                </figcaption>
+              </div>
+                <div class="col-md-8 col-sm-12 description">
+                  <h3>Joshua Phillips</h3>
+                  <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi temporibus, odit quis dolor tempore
+                    totam soluta blanditiis dolorem fugiat consequuntur, exercitationem similique! Labore ipsum praesentium optio
+                    sint
+                    amet placeat.
+                  </p>
+                </div>
+              
+              
+              
             
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi temporibus, odit quis dolor tempore
-              totam soluta blanditiis dolorem fugiat consequuntur, exercitationem similique! Labore ipsum praesentium optio
-              sint
-              amet placeat.</p>
+            </div>
           </div>
     </article>
 
-      <!-- portfolio -->
+      <!-- Portfolio -->
     <article id="my-portfolio">
       <h2 class="article-heading" id="portfolio">Portfolio</h2>
           <div id="nav-bar-portfolio" style="border: solid 1px black;">
@@ -98,7 +119,7 @@
             <div class="port-list row" style="border: solid 1px black;">
 
               
-                <div class="port-1 col-md-2 offset-md-1" style="border: solid 1px black;">Project 1</div>
+                <div class="port-1 col-md-2 offset-md-1" id="project-text" style="border: solid 1px black;">Project 1</div>
                 <div class="port-2 col-md-2 offset-md-2" style="border: solid 1px black;">project 2</div>
                 <div class="port-3 col-md-2 offset-md-2" style="border: solid 1px black;">project 3</div>
 
@@ -106,9 +127,7 @@
                 <div class="port-5 col-md-2 offset-md-2" style="border: solid 1px black;">project 5</div>
                 <div class="port-6 col-md-2 offset-md-2" style="border: solid 1px black;">project 6</div>
 
-                <div class="port-7 col-md-2 offset-md-1" style="border: solid 1px black;">Project 7</div>
-                <div class="port-8 col-md-2 offset-md-2" style="border: solid 1px black;">project 8</div>
-                <div class="port-9 col-md-2 offset-md-2" style="border: solid 1px black;">project 9</div>
+              
 
             </div>
 
@@ -138,8 +157,8 @@
     <section class="contact row" id="contact">
       
       <div class="container row"> 
-  <!-- check if you need the above div? (its under a section) -->
-  <hr >
+      <!-- check if you need the above div? (its under a section) -->
+      <hr >
         <!-- Social network -->
         <div class="social-network col-md-3 col-sm-12 offset-md-1" style="border: solid 1px black;">
           <h1 class="get-in-touch" style="border: solid 1px black;">Get in touch</h1>
@@ -166,9 +185,6 @@
               </svg>
             </a>
           </address>
-
-
-
         </div>
 
         <!--Contact information -->
@@ -190,12 +206,8 @@
 
           <div class="d-grid gap-2">
             <button class="btn btn-primary" type="button">Send</button>
-
           </div>
         </div>
-
-
-
       </div>
     </section>
   <!-- End of Get In Touch -->
