@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XP Gold W2 D2</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+
+        command + option + J
+
+    </div>
+    <script>
+
+        // ------------------------Exercise 2: The Grade Assigner ------------------------------------
+
+        // parseInt = The parseInt function converts its first argument to a string, parses that string, then returns an integer or NaN.
+        // The typeof operator returns a string indicating the type of the unevaluated operand.
+        // ^^ e.g Number, string, boolean, undefined ^^
+        let userGrade = parseInt(prompt('what is your grade?'))
+        console.log(typeof (userGrade));
+
+
+        if (userGrade > 90) {
+            console.log('A');
+        } else if (userGrade <= 90 && userGrade >= 80) {
+            console.log('B');
+        } else if (userGrade < 80 && userGrade >= 70) {
+            console.log('C');
+        } else {
+            console.log('D');
+        }
+
+
+
+        // ------------------------------EXERCISE 3: VERBING ------------------------------------------
+
+        
+        let word = prompt('please input a verb!')
+        wordArray = word.split('')
+        let wordlength = word.length
+        let lastLetter = wordlength - 1;
+        let secondLast = wordlength - 2;
+        let thirdLast = wordlength - 3;
+        let lastThree = `${wordArray[thirdLast]}${wordArray[secondLast]}${wordArray[lastLetter]}`
+        if (word.length >= 3 && lastThree != 'ing') {
+            console.log(word + 'ing');
+        } else if (word.length >= 3 && lastThree === 'ing') {
+            console.log(word + 'ly');
+        } else if (word.length < 3) {
+            console.log(word);
+        }
+
+
+    </script>
+
+</body>
+
+</html>
