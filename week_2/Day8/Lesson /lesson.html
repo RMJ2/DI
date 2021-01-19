@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W2 D3 Lesson & Exercises</title>
+</head>
+<body>
+
+<div style="text-align: center;">
+
+    command + option + J
+<br>
+<br>
+
+    Lesson 1.  What is a Loop? 
+
+<br>
+
+    Exercise 1 : Loop that will iterate from 0 to 15
+
+<br>
+Lesson - What is a LOOP continued    
+
+</div>
+
+
+    <script src="lesson.js">
+
+// --------------------------------Lesson - What is a LOOP---------------------------------------
+
+        // How many times should it be repeated?
+
+
+        // for (let i = 0; i <2; i++){
+        //     // statement that will be repeated
+        //     console.log ('the current number is')
+        // }
+
+
+        // 4 times 
+        // counter : 1 
+        // counter : 2
+        // counter : 3 
+
+
+        // // Initialization   //
+        // for (let counter = 1; counter <=4; counter++){
+        //     // action or statement
+        //     console.log('the loop runs, counter : ', counter)
+
+        // }
+
+
+
+
+// ---------------EXERCISE 1 - Loop that will iterate from 0 to 15------------------------------
+
+// Create a stuctured html file linked to a JS file
+
+// 1. Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen.
+
+// Sample Output: //"0 is even" //"1 is odd" //"2 is even"
+
+
+// for (let i =0; i <= 15; i++) {
+//     if (i === 0) {
+//             console.log(i + ' is even');
+//     }
+//     else if (i % 2 === 0){
+//             console.log(i + ' is even');
+//     }
+//     else{
+//         console.log(i + ' is odd');
+//     }
+// }
+
+
+
+
+// ----------------------------Lesson - What is a LOOP continued-------------------------------------------------------------------------
+
+
+        //------------ // Initialization --------  //
+
+    //    for (let counter = 1; counter <=4; counter++){
+    //         // action or statement
+            
+    //         if (counter ==2){
+    //             console.log('Yeah')
+    //             continue;
+    //         }
+    //         console.log('the loop runs, counter : ', counter)
+
+    //     }
+
+// How to pick the color blue?
+
+            // let colors = ['blue', 'red', 'yellow']
+            // // console.log
+            // // blue
+            // // red
+            // // yellow
+
+            // // We dont want to repeat ourself like below: use a loop instead
+
+            // // console.log(colors[0], colors[1], colors[2])
+
+
+            // // THE LOOP WILL RUN THREE TIMES:
+            // for (let counter = 0; counter <=colors.length; counter++){
+            //     //console.log the colors  
+            //     console.log(colors[counter])
+            // }
+
+// 1ST LOOP: COUNNTER = 0 --> colors[0]
+// 2ND LOOP: COUNNTER = 1 --> colors[1]
+// 3RD LOOP: COUNNTER = 2 --> colors[2]
+
+
+
+// ------------------------------What is a for/in LOOP ------------------------------------------
+
+// EXERCISE 2
+// --> use a for loop to console.log each name and say hello
+// --> 'hello lea'
+
+        // let friends = ["Lea", "Jonas", "David"]    // ARRAY OF FRIENDS
+
+        // for (let counter =0; counter <= friends.length; friends++){
+        //     console.log('Hello' + ' ' + friends[counter])
+            
+        // }
+
+//------------ WHILE LOOP--------------------      
+
+// Allows code to be executed repeatedly based on a given Boolean condition.
+
+let n = 0;
+
+while (n < 3) {
+    n++;
+    console.log(n)
+}
+
+
+
+
+
+
+
+
+
+    </script>
+    
+
+
+
+</body>
+</html>

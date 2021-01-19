@@ -16,13 +16,13 @@
 
 
 
-//     // 2. Favourite colour - Write a simple JavaScript program to join all elements of the following array into a string.
+    // 2. Favourite colour - Write a simple JavaScript program to join all elements of the following array into a string.
 
-//         // let me = ["my","favorite","color","is","blue"]
+                //     let me = ["my","favorite","color","is","blue"]
 
-//     // Answer: 
-//     let me = ["my favourite color is blue"]
-//     console.log(me)
+                // // Answer: 
+                // let meString = me.join(' '); 
+                // console.log(meString)
 
 
 // // 3. Mix Up
@@ -44,13 +44,25 @@
 
 // or
 
-console.log('Exercise 3:')
-let string1 ='pod';
-let string2 ='mix';
+        // console.log('Exercise 3:')
+        // let string1 ='pod';
+        // let string2 ='mix';
 
-let string44= string1.substring(0,string1.length-1) +string2.substring(string2.length-1)
-console.log(string44)
+        // let string44= string1.substring(0,string1.length-1) +string2.substring(string2.length-1)
+        // console.log(string44)
 
-let string45= string2.substring(0,string2.length-1) +string1.substring(string1.length-1)
-console.log(string45)
-console.log(string44 + ' ' + string45)
+        // let string45= string2.substring(0,string2.length-1) +string1.substring(string1.length-1)
+        // console.log(string45)
+        // console.log(string44 + ' ' + string45)
+
+
+
+
+
+
+let userGrade = parseInt(prompt('What is your grade?'))
+
+console.log(typeof(userGrade));
+console.log(userGrade)
+
+
