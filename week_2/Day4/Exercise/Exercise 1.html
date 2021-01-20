@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise1</title>
+</head>
+
+<body>
+
+    <script>
+
+        // ------------------------------Exercise 1 : Keyless Car-------------------------------
+
+//         //      Ask the user for his age, and save the value into a variable
+//         //      Create a function called checkDriverAge() that will alert the user if he can drive depending on his age.
+//         //      if he is too young, alert “Sorry, you are too young to drive this car. Powering off”
+//         //      if he is old enough, alert “You are old enough to drive, Powering On. Enjoy the ride!”
+//         //      if he just turned 18, alert “Congratulations on your first year of driving. Enjoy the ride!”
+//         //      Instead of using prompt to ask the user for his age, make the checkDriverAge() function accept an argument age, 
+//         //      so that if you enter: checkDriverAge(92); it alerts “You are old enough to drive, Powering On. Enjoy the ride!”
+
+//     // 1. instructions
+//         // global variable 
+// // let age = prompt('What is your age ?')   //4. no longer need this 
+
+//     // 2. instructions 
+// function checkDriverAge(age){                //4. insert age 
+
+//     // 3. instructions 
+//     if (age < 18){
+//     console.log('Sorry, you are too young to drive this car. Powering off')
+//     } else if (age >18){
+//         console.log('You are old enough to drive, Powering On. Enjoy the ride!')
+//     } else {
+//         console.log('Congratulations on your first year of driving. Enjoy the ride!')
+//     }
+// }
+// // Call the function
+// checkDriverAge(prompt('What is your age'))                          //4. insert agee 55
+
+//     //4. see above changes
+
+
+
+
+
+// --------------------- Exercise 2 - What’s In My Wallet ? ------------------------------
+
+
+
+
+
+// --------------------- Exercise 3: Find The Multiples Of 23 ------------------------------
+
+
+// //  Write a js function that console.log the multiples of 23 less than 500 and at the end return the sum of all of them.
+
+// // Elements : 0 23 46 69 92 115 138 161 184 207 230 253 276 299 322 345 368
+// // 391 414 437 460 483
+// // Sum : 5313
+
+
+// function multiples () {
+//     //create an array to hold the numbers 
+//     let arrayNumber =[];
+
+//     //we loop through a range of numbers 0-500
+//     for (let number =0; number <= 500; number++){
+
+//        //We check if the number is divisible by 23
+//        //If the number is divisible by 23
+//         if (number % 23 == 0){
+
+//                 //push the numbers in the array we created earlier (arrayNumber)
+//                 arrayNumber.push(number)
+//         }else {
+
+//             //we skip this number
+//             continue; 
+//         }
+//     }
+//     return arrayNumber;
+// }
+// multiples()
+
+
+// // Display the sum 
+// function sumNumbers (){
+//     let listNumbers = multiples()
+//     // let listNumbers = arrayNumbers
+// }
+
+
+
+
+// let array = [1,2,3]
+// let sum = 0 
+
+// // sum = sum + array[0] --> SUM : 1   ---- sum += array[0]
+// // sum = sum + array[1] --> SUM : 3   ---- sum += array[1]
+// // sum = sum + array[2] --> SUM : 6   ---- sum += array[2]
+
+// // loop --> faster to write 
+// for (let i = 0; i<array.length; i++){
+//     sum += array[i]
+// }
+
+
+
+
+
+
+// arrayNumber = [0, 23, 46, 69, 92, 115, 138, 161, 184, 207, 230, 253, 276, 299, 322, 
+// 345, 368, 391, 414, 437, 460, 483] 
+// The sum that we need to get : 5313
+
+//find the multiples of 23
+function multiples () {
+	let arrayNumber = [];
+	for (let number = 0; number <= 500; number++){
+		if (number % 23 == 0){
+			arrayNumber.push(number)	
+		} else {
+			continue;
+		}
+	}
+	//makes arrayNumber accessible outside
+	return arrayNumber;
+}
+
+//Display the sum
+function sumNumbers () {
+	let listNumbers = multiples(); //let listNumbers = arrayNumber
+	let sum = 0;
+	for (let i = 0; i < listNumbers.length; i++){
+		sum += listNumbers[i]
+	}
+	console.log(`The sum is ${sum}`)
+}
+
+
+// let array = [1,2,3]
+// let sum = 0;
+// ​
+// // sum = sum + array[0] // so SUM is equal to 1  // THE SAME AS --- sum += array[0]
+// // sum = sum + array[1] // so SUM is equal to 3  // THE SAME AS --- sum += array[1]
+// // sum = sum + array[2] // so SUM SUM is equal to 6  // THE SAME AS --- sum += array[2]
+// // ​
+// // loop --> faster to write
+// ​
+// for (let i = 0; i<array.length; i++) {
+// 	sum += array[i]
+// }
+// ​
+// console.log("sum : ", sum)
+
+
+
+// --------------------- Exercise 4 : Amazon Shopping ------------------------------
+
+
+
+
+// --------------------- Exercise 5 : Shopping List ------------------------------
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
