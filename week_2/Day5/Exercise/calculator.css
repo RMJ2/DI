@@ -1,0 +1,45 @@
+#container{
+    background-color: honeydew;
+}
+
+
+.calcDisplay{
+    border: solid 1px black; 
+    border-radius: 20px;  
+    font-size: 40px;
+    padding: 0px;
+    align-self: center;
+    background-color: white;
+}
+
+
+.wrapper{
+    border: solid 2px black;
+    width: fit-content;
+    height: 600px;
+    padding: 15px;   
+    font-size: 30px;
+}
+    
+
+.btn-symbol{
+    background-color: orange;
+}
+
+
+.btn-clear{
+    background-color: red;
+    color: white;
+    
+}
+
+.btn-reset{
+    background-color: blue;
+    color: white;
+    
+}
+
+.buttons{
+    background-color: green;
+    color: white;
+}

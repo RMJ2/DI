@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+</head>
+<body>
+    
+<script>
+
+
+
+let a = 'tttt'
+a = 700; 
+a = true; 
+console.log(a); 
+
+
+1==1    (true) 
+
+1=='1'  (true)
+1==='1' (false)
+
+
+// IF / ELSE IF / ELSE 
+
+let a = 6; 
+let b = 5; 
+
+if (a==b){          //question 1 
+    console.log(1)
+}
+
+else if(1==6){      // false so use this instead. 
+    console.log(2)
+}
+
+else {
+    coonsole.log(3)
+}                // if also false use this
+
+console.log(END)
+
+
+//------------------------SWITCH & CASE-----------------------------------------
+
+// switch will select which case is correct and choose it
+
+let a ="hell";
+switch (a) {
+  case "hell":
+    console.log(1);
+    break;
+  case "hel":
+    console.log(2);
+    break;
+  case "hello":
+    console.log(4);
+    break;
+  default:
+    console.log(5);
+}
+
+
+//--------------------------------FUNCTIONS----------------------------------
+
+// A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+// Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+// The parentheses may include parameter names separated by commas: (parameter1, parameter2, ...)
+// The code to be executed, by the function, is placed inside curly brackets: {}
+
+// TYPES OF FUNCTIONS
+
+function name(){}
+const a = function () {}
+const x = (a, b, c) => {}
+return
+
+
+//  Different options 
+
+function a(){
+    console.log ('haleloya');
+}
+//OR
+const b = function(){
+    console.log('bla bla');
+}
+//OR
+const c = () => {
+    console.log ('testing');
+}
+
+c('haha'); 
+
+
+
+// FOR EXAMPLE:
+
+function a() {
+    let a=2; 
+    let b=3; 
+    return a+b;
+}
+console.log(a)
+
+// OR 
+
+function a(arr){
+  return arr[3];
+}
+let myarr = [2,5,3,6]
+let b = a(myarr);
+console.log(b);
+
+// or 
+
+let a = 5; 
+
+const calc = (param) => {
+    return a + param; 
+}
+const two = (param) => {
+    return calc(param)
+}
+
+let d = two(7); 
+console.log(d); 
+
+
+
+//---------------------DATA STRUCTURES ----------------------------------
+
+// Array & Structures
+
+//ARRAY:
+let arr = [9, true, 'ttt', [777, 888, 999]]   // This holds data inside an array - you can put a NESTED ARRAY inside an ARRAY. 
+
+
+let fruits = ['Bannana', 'Orange', 'Apple', 'Mango']; // = all letters inside an array must have '' quotations. 
+let f = fruits.join('')     // the '' will put a space between words. you could also put a star * or anything else between words.
+console.log(fruits.pop);    // pop will remove the last word from the array - remove/ select the word. 
+console.log(fruits.push)    //will add something to the end of the array
+console.log(fruits.shift)   // will remove the first element from Array. 
+console.log(fruits.unshift) //adds a new element to beginning of the array 
+console.log(fruits.length)  // will measure the full length of the array. 
+console.log(fruits.concat)  // will join two elements/arrays together. 
+console.log(fruits.slice)   // will slice the all items from start until where you specify. you must tell it where to begin and end. 
+console.log(fruits.)
+
+
+//OBJECTS:
+// The Object class represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor or the object initializer / literal syntax.
+
+let obj = {
+    a: 'bla bla', 
+    name: 'Alex',
+    age: 22,
+}
+console.log(obj.age + obj.name + obj.a); // to get the info above write into console.log.
+
+//or 
+
+let obj = {
+    a: 'bla bla', 
+    name: 'Alex',
+    age: 22,
+    arr: [8,9,0]
+}
+console.log(obj.arr[1]);    // to get 9 in the array, treat it like an array search. 
+
+// OR
+
+let obj = {
+    a: 'bla bla', 
+    name: 'Alex',
+    age: 22,
+    arr: [8,9,0]
+    calc: function(){
+        console.log('obj function');
+    }
+}
+console.log(obj.calc());        //to access the function. 
+
+//or 
+
+let friends = [             // a large array inside with multiple data. (like facebook)
+{                           //below is three profiles of info/data.
+    name: 'ziv',
+    age: 12, 
+    email: 'hfhf@gmail.com',
+    address: {
+        street: 'sirkin st',
+        number: '11', 
+        city: 'TA',
+    }
+},
+{   
+    name: 'ben',
+    age: 19, 
+    email: 'hfhf@gmail.com'
+},
+{   
+    name: 'josh',
+    age: 20, 
+    email: 'blahblah@gmail.com'
+},
+]
+console.log(friends)
+
+
+
+//-------------------------------------LOOPING ------------------------------------------
+
+for (var i= 0; i <5; i++){      // var works inside and outside loop, 'let' only inside. 
+    console.log('in', i);      // will show = in 0-4                // i = starting at 0 - 4 finishing at \\ i++ adds on one more number 
+}
+console.log('out', i);      // will show out = 5
+
+//OR
+
+let arr = [9, 49, 77, 554];                    // array
+for (let i = 0; i < arr.length; i++) {      // i = 0, smaller then length, +1
+  console.log(arr[i]);                      // arr == i
+}
+
+
+//  NESTED LOOP  
+// a loop indside a loop (below is 3 loops = 2 nested)
+
+or (let i = 0; i < 5; i++) {        // Loop 1 start 0
+  for(let j = 0; j < 5; j++){       // loop 2 start 0
+    for(let x = 0; x < 5; x++){     // loop 3 start 0-1-2-3-4 (then goes back to the beginning and starts again)
+      console.log(i, j, x);
+    }
+  }
+}
+
+
+// forEach------
+
+let arr = [9,49,99,554]; 
+
+arr.forEach( (item, i) => {
+    console.log(item, i);
+})
+
+// or 
+
+let arr = [9,49,77,554];
+// for (var i = 0; i < arr.length; i++) {
+//   console.log(i,arr[i])
+// }
+// for(i in arr){
+//   console.log(i,arr[i])
+// }
+// for(i of arr){
+//   console.log(i);
+// }
+arr.forEach( item => {
+  console.log(item);
+})
+
+
+//------
+
+const detailedBasket = {
+  apples: 5,
+  oranges: 10,
+  grapes: 1000
+}
+//
+for (i in detailedBasket) {
+   console.log(i, detailedBasket[i]);
+}
+
+
+// loop ---- while & for
+        // you will use 'for loops' more than 'while loops'
+
+//for loop 
+
+
+// while loop
+
+
+// do loop
+    // 
+
+    let i = 0;
+while(i<5){
+  console.log('55555');
+  i++;
+}
+let j = 0;
+do{
+  console.log('666666');
+  j++
+}
+while(j<0)
+
+
+
+

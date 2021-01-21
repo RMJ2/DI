@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir='ltr'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Calculator</title>
+
+</head>
+
+<body>
+    <div id='container'>
+        <div class='wrapper row '>
+            <div id='calcDisplay' class='calcDisplay col-8 offset-2 p-4' type="text">0</div>
+            
+            <button type="button" class="buttons col-2 offset-2 p3" name="button" onclick="my_f(0);">0</button>
+            <button type="button" class="buttons col-2 p3" name="button" onclick="my_f(1);">1</button>
+            <button type="button" class="buttons col-2 p3" name="button" onclick="my_f(2);">2</button>
+            <button type="button" class="buttons col-2 p3" name="button" onclick="my_f(3);">3</button>
+            <br>
+            <button type="button" class="buttons col-2 offset-2" name="button" onclick="my_f(4);">4</button>
+            <button type="button" class="buttons col-2" name="button" onclick="my_f(5);">5</button>
+            <button type="button" class="buttons col-2" name="button" onclick="my_f(6);">6</button>
+            <button type="button" class="buttons col-2" name="button" onclick="my_f(7);">7</button>
+            <br>
+            <button type="button" class="buttons col-2 offset-2" name="button" onclick="my_f(8);">8</button>
+            <button type="button" class="buttons col-2" name="button" onclick="my_f(9);">9</button>
+            <button type="button" class="buttons col-2" name="button" onclick="my_f('.');">.</button>
+            <button type="button" class="btn-symbol col-2" name="button" onclick="my_f('+');">+</button>
+            <br>
+            <button type="button" class="btn-symbol col-2 offset-2" name="button" onclick="my_f('-');">-</button>
+            <button type="button" class="btn-symbol col-2" name="button" onclick="my_f('*');">*</button>
+            <button type="button" class="btn-symbol col-2" name="button" onclick="my_f('/');">/</button>
+            <button type="button" class="btn-symbol col-2" name="button" onclick="calculate('=');">=</button>
+            <br>
+            <button type="button" class="btn-reset col-4 offset-2" name="button" onclick="reset('reset');">Reset</button>
+            <button type="button" class="btn-clear col-4" name="button" onclick="backspace('backspace');">Clear</button>
+
+
+
+        </div>
+    </div>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  -->
+
+  <!-- javascript link below -->
+    <script src="calculator.js" charset="utf-8"></script>
+</body>
+
+</html>
