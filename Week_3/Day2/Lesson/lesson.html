@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+<!-------------------- exercise 1------------------ -->
+    
+<table id="sampleTable" border="1"> 
+    <tr>
+        <td>Row1 cell1</td> 
+        <td>Row1 cell2</td>
+    </tr> 
+    <tr>
+        <td>Row2 cell1</td> 
+        <td>Row2 cell2</td>
+    </tr> 
+
+    <!-- add new rows through JS. 
+    <tr>
+        <td>Row2 cell1</td> 
+        <td>Row2 cell2</td>
+    </tr> 
+     -->
+
+     <button></button>
+
+    </table>
+    
+    <!--        button      user click                       -->
+    <input type="button" onclick="insert_Row()" value="Insert row"> 
+    <!--  when the user clicks on the button (onclick) then the function
+    insert_Row will be executed. -->
+
+    <script>
+
+// ------------exercise 1 ------------------
+function insert_Row(){
+ 
+     
+ var table = document.getElementById("sampleTable");
+ // Find a <table> element with id="myTable":
+ // Create an empty <tr> element and add it to the 1st position of the table:
+ var row = table.insertRow(2);
+ // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+ var cell1 = row.insertCell(0);
+ var cell2 = row.insertCell(1);
+ // Add some text to the new cells:
+ cell1.innerHTML = "NEW CELL1";
+ cell2.innerHTML = "NEW CELL2";
+ }
+
+
+let paragraph = document.getElementById
+
+
+    </script>
+</body>
+</html>
+
+

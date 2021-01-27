@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catch up Lise loops & functins</title>
+</head>
+<body>
+    
+    <!-- //Program
+
+//JUST BASIC JS (last week)
+//Use a function to do this program
+
+//1. Ask the user for a list of groceries : "Apple,Pear,Banana"
+    //- Prompt user: (let x = prompt('What do you need to buy?'))
+
+
+//2. Ask the user for the amount of groceries : "1,5,4"
+  //  numerical prompt to user (let y = prompt(how many do you need to order of each item?))
+
+
+//3. Retrieve the information and convert it into an array
+      //  (need two arrays) - no idea how to do it!
+       // let arr1 = (x); 
+       //  let arr2 =  parseInt(y); 
+
+        
+//4. Make sure that the 1st array contains only strings, and the second contains only numbers:
+//if not we need to convert it to the good data type
+        // dont understand
+
+
+
+
+//5. Display to the user the final shopping list
+    //dont understand how to do this. 
+
+    
+* conditionals - which
+* loops - which
+* function -->
+
+
+    <script> 
+    
+ //Program
+//JUST BASIC JS (last week)
+//Use a function to do this program
+//1. Ask the user for a list of groceries : "Apple,Pear,Banana"
+    //- Prompt user: (let x = prompt('What do you need to buy?'))
+//2. Ask the user for the amount of groceries : "1,5,4"
+  //  numerical prompt to user (let y = prompt(how many do you need to order of each item?))
+//3. Retrieve the information and convert it into an array
+	// * save the information
+	// * create a variable to save information
+      	
+// (need two arrays) - no idea how to do it!
+// let arr1 = (x); 
+// let arr2 =  parseInt(y); 
+        
+//4. Make sure that the 1st array contains only strings, and the second contains only numbers:
+//if not we need to convert it to the good data type
+        // dont understand
+//5. Display to the user the final shopping list
+    //dont understand how to do this. 
+    
+// * conditionals - which
+// * loops - which
+// * function
+​
+​
+function shoppingList () {
+	//prompt for the 
+	let groceries = prompt('What do you need to buy? Divide the groceries by comma')
+	//apple,banana,pear --> groceries = apple,banana,pear
+	let amountGroceries = prompt("how many do you need to order of each item?")
+	// typeof : built in js function to retrieve thetype of data of a variable
+	// console.log(typeof(groceries))
+	//convert a string into an array : split
+	let groceriesArray = groceries.split(",")
+	let amountGroceriesArray = amountGroceries.split(",")
+	// review
+	for (let i=0; i < amountGroceriesArray.length; i++){
+		//review
+		if (typeof(amountGroceriesArray[i]) == "string") {
+			amountGroceriesArray[i] = parseInt(amountGroceriesArray[i]);
+			//this statement is executed
+		} 
+		console.log("You ordered " + amountGroceriesArray[i] + " " + groceriesArray[i])
+	}
+}
+​
+shoppingList()
+				
+// For loop		                         //1                   Apple
+// 	console.log("You ordered" + amountGroceriesArray[0] + groceriesArray[0])
+//  console.log("You ordered" + amountGroceriesArray[1] + groceriesArray[1])
+// 	console.log("You ordered" + amountGroceriesArray[2] + groceriesArray[2])
+// ["apple","banana"]  - amountGroceriesArray[0] - groceriesArray[0] 
+					   // - amountGroceriesArray[1] - groceriesArray[1]
+
+
+
+
+    </script>
+</body>
+</html>

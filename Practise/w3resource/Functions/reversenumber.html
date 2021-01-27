@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Reverse a number</title>
+</head>
+<body>
+  
+   
+    <script>
+
+        let x = 12345           //variable
+        console.log(x);         // x = 12345
+
+        function reverseNumber(n){  // function & name
+            n = n + '';             // convert into a string.    
+            return n.split('').reverse().join('');  //split = turn array of strings into sunstrings, reverse = first becomes last element, join = join  all elements into a string. 
+        }
+        console.log(reverseNumber(x));          //reverseNumber function to x
+
+
+    </script>
+</body>
+</html>

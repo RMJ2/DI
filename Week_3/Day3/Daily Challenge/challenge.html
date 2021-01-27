@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge xp</title>
+</head>
+<body>
+    
+
+    <!-- <form>
+        <input type="text">
+    </form> -->
+
+<!-- or -->
+
+    <form>
+        <label>Put your text in here</label>
+        <br>
+        <input type="text" name="textfield" id="text-input">
+    </form>
+    <p id="text-container"></p>
+
+    
+    <script 
+
+        <!-- var volumne = document.forms[0].children[0]; -->
+        // volumne.onkeyup = function (event) {
+            // var str = volumne.value;
+            // var x = event.keycode; 
+            // if (x<65 || x > 122 || (x >90 && x < 97)) {
+                // volumne.value = str.slice(0, -1);
+            // } 
+        // }; 
+
+
+        // || 
+
+        let container = document.getElementById('text-container');
+        let input = document.getElementById('text-input');
+        input.addEventListener('keypress', keyLogger);
+        let letters = /^[A-Za-z]+$/;
+        function keyLogger(element) {
+        if (element.key.match(letters)){
+        container.textContent += `${element.key}`;
+    } else {
+        container.textContent += ``;
+    }
+}
+    </script>
+</html>
