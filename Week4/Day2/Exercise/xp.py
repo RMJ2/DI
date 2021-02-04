@@ -1,4 +1,4 @@
-# Exercise 1 : Favorite Numbers
+# Exercise 1 : Favorite Numbers DONE
 # 1. Create a set called my_fav_numbers with your favorites numbers.
 # 2. Add two new numbers to it.
 # 3. Remove the last one.
@@ -33,7 +33,7 @@
 #     print(i)
 
 
-# Exercise 4: Floats - STUCK 
+# Exercise 4: Floats - DONE 
 # 1. Recap – What is a float? What is the difference between an integer and a float?
 # 2. Can you think of another way of generating a sequence of floats?
 # 3. Create a list containing the sequence 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 without hard-coding the sequence.
@@ -48,7 +48,7 @@
 
 
 
-# Exercise 5: Shopping List
+# Exercise 5: Shopping List  DONE
 # 1. Consider this list basket = ["Banana", "Apples", "Oranges", "Blueberries"];
 # 2. Remove “Banana” from the list.
 # 3. Remove “Blueberries” from the list.
@@ -72,7 +72,7 @@
 
 
 
-# Exercise 6 : Loop
+# Exercise 6 : Loop - DONE
 # 1. Write a while loop that will keep asking the user for input until the input is the same as your name.
 
 # name = input('Enter your name: ')
@@ -120,12 +120,12 @@
 
 
 
-# Exercise 9 = STUCK 
+# Exercise 9 = DONE 
 # 1. Use a for loop to find numbers between 1500 and 2700, which are divisible by 7 and multiples of 5.
 
 # num = []
 # for i in range(1500, 2701):
-#     if (i%7==0) and (i%5==0); 
+#     if (i%7==0) and (i%5==0):
 #         num.append(str(i))
 # print (','.join(num))
 
@@ -187,60 +187,57 @@
 #     print('the ticket is $15')
 # # print(age)
 
-family_list = []
+# family_list = []
 
-name_age = input('Please input your name, your age. Put a comma inbetween name/age; then write exit:  ')
-while name_age != 'exit':
-    person_info = name_age.split(',')
-    family_list.append(person_info) 
-    name_age = input('Please input your name, your age. Put a comma inbetween name/age; then write exit:  ')
+# name_age = input('Please input your name, your age. Put a comma inbetween name/age; then write exit:  ')
+# while name_age != 'exit':
+#     person_info = name_age.split(',')
+#     family_list.append(person_info) 
+#     name_age = input('Please input your name, your age. Put a comma inbetween name/age; then write exit:  ')
 
-# print(family_list)
+# # print(family_list)
 
-# age = int(input('what is your age: '))
-total_price = 0
-for person_info in family_list:
-    if int(person_info[1]) < 4:
-        print('You are too young')
-        continue
-    elif int(person_info[1]) >= 4 and int(person_info[1]) < 12:
-        total_price += 10
-    else:
-        total_price += 15
+# # age = int(input('what is your age: '))
+# total_price = 0
+# for person_info in family_list:
+#     if int(person_info[1]) < 4:
+#         print('You are too young')
+#         continue
+#     elif int(person_info[1]) >= 4 and int(person_info[1]) < 12:
+#         total_price += 10
+#     else:
+#         total_price += 15
 
-print(total_price)
+# print(total_price)
 
-permitted = []
+# permitted = []
 
-for person_info in family_list:
-    if int(person_info[1]) >= 16 and int(person_info[1])<= 21:
-        print(f'{person_info[0]} you can watch the movie')
-        permitted.append(person_info[0])
-    else: 
-        print(f'{person_info[0]} you are too young or old')
-
-
+# for person_info in family_list:
+#     if int(person_info[1]) >= 16 and int(person_info[1])<= 21:
+#         print(f'{person_info[0]} you can watch the movie')
+#         permitted.append(person_info[0])
+#     else: 
+#         print(f'{person_info[0]} you are too young or old')
 
 
 
 
-# Exercise 13 : Who Is Under 16? - STUCK 
+# Exercise 13 : Who Is Under 16? - DONE 
 # This time you have a list of users, and you want to remove every user that is below 16 years old.
 
 # Write a program that ask every user their age, and if they are less than 16 years old, remove them from the list.
 # At the end, print the final list.
 
-# user = ['max, josh, joe']
-# user_age = int(input('what is your age?: '))
-# print(user_age)
+# users = ['Max', 'Josh', 'Joe']                          # list of users
+# users_over_16 = []                                      # empty list for user over 16
+# for user in users:                                      #for loop to seprate user
+#     age = int(input(f'Hi {user}, how old are you? '))   # age input with function
+#     if age >= 16:                                       # if age is == or over 16 only, append to new list 
+#         users_over_16.append(user)
+# print(users_over_16)
 
-# if user_age < 16:
-#     print(user_age.remove(user))
 
-
-
-
-# Exercise 14: Family Members
+# Exercise 14: Family Members - DONE
 # Using a while loop keep asking a user for input, these inputs will be used to control a menu
 # On the menu we will have 4 options:
 # Add a name
@@ -251,15 +248,21 @@ for person_info in family_list:
 # Print a nice list of the family members names
 # Exit
 
+# users = []
+# while True: 
+#     selection = int(input('Select a number 1 -4: '))
+
+#     if selection == 1: 
+#         new_name = input('add a name: ')
+#         users.append(new_name)
+#     elif selection == 2:
+#         rem_name = input('What name should I remove?')
+#         users.remove(rem_name)
+#     elif selection == 3:
+#         print(users)
+#     elif selection == 4: 
+#         break
+#     else:
+#         print('Invalid request')
 
 
-
-
-# # 
-# my_list = [1,2,3,4,5,6,7,8,9,10]
-
-# counter = 0
-# for item in my_list: 
-#     counter = counter + item
-
-# print(counter)

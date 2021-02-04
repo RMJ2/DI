@@ -14,9 +14,9 @@
 # Swap some characters around then print the newly jumbled string (hint: look into the shuffle method)
 # Example:
 # Hlrolelwod
+#DONE
 
-
-string = input('answer me in 10 characters:')
+string = input('write Hello World:')
 
 
 if len(string)<10:
