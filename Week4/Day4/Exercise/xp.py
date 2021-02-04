@@ -13,9 +13,9 @@
 # The function should print a message, such as “One of my favorite books is Alice in Wonderland”.
 # Call the function, making sure to include a book title as an argument in the function call.
 
-# def favorite_book(book_name):
-#     print(f'One of my favorite books is {book_name}')
-# favorite_book('Alice in wonderland')    
+def favorite_book(book_name):
+    print(f'One of my favorite books is {book_name}')
+favorite_book('Alice in wonderland')    
 
 
 # Exercise 3 : Some Geography
@@ -81,17 +81,21 @@
 # Write a function called make_great() that modifies the list of magicians by adding the phrase "the Great" to each magician’s name.
 # Call show_magicians() to see that the list has actually been modified.
 
-magicians_names = ['Harry', 'Brian', 'Jamie']
+# name_list = ['Harry', 'Brian', 'Jamie']
 
-def show_magicians(magicians_names):
-    for name in magicians_names:
-        print(magicians_names)
+# def show_magicians(magicians_names):
+#     for name in magicians_names:
+#         print(name)
 
-    # def make_great(great)
-    #     for name in magicians_names:
-    #         join()
+# def make_great(magicians_names):
+#     new_list = []
+#     for name in magicians_names:
+#         new_list.append(f'The great {name}')
+#     return new_list
 
-show_magicians()
+# show_magicians(name_list)
+# name_list = make_great(name_list)
+# show_magicians(name_list)
 
 
 # Exercise 7: When Will I Retire ?   STUCK
@@ -114,29 +118,38 @@ show_magicians()
 # Display a message to the user informing them whether they can retire or not.
 # As always, test your code to ensure it works.
 
-def get_age(year, month, day):
+# def get_age(year, month, day):
    
-    current_year = 2021
-    current_month = 2
-    current_day = 3
-    users_age_year = current_year - year 
-    if current_month > month:
-`       return`
+#     current_year = 2021
+#     current_month = 2
+#     current_day = 3
+#     users_age_year = current_year - year 
+#     if current_month > month:
+#         return users_age_year
+#     elif current_month == month:
+#         if current_day > day:
+#             return users_age_year 
+#         else: 
+#             return users_age_year -1
+#     else:
+#         return users_age_year -1
+# print(get_age(1993, 2, 5))
 
 
-print(get_age())
 
+# def can_retire (gender, DOB):
+#     year, month, day = DOB.split('/')               # split the year, month, day at position / into 3 strings
+#     age = get_age(int(year), int(month), int(day))  # age is put into 3 integers year, month year and definied as a variable. 
 
+#     if age >= 67 and gender == 'm' or age >= 62 and gender == 'f':  #if age/gender is more or == to retirement age
+#         print('You can retire')
+#     else:                                                           #if users age is less then retirement age
+#         print('Go back to work')  
 
-    # def can_retire (gender, DOB):
-    #     input('what is your age, gender: ')
+# user_gender = input('what is your gender m/f')                      #variable input for gender
+# user_dob = input('what is your DOB: yyyy/mm/dd')                    #variable input DOB
 
-    #     if age >= 67 and gender == male or age >= 62 and gender == female: 
-    #         print('You can retire')
-    #     else: 
-    #         print('Go back to work')    
-
-    # retire(68, 'male')
+# can_retire(user_gender, user_dob)                                   # call function on gender/age
 
 
 
@@ -145,3 +158,5 @@ print(get_age())
 # Example:
 # If X=3 the output when calling our function should be 3702 (3 +33 +333 + 3333)
 # Hint: treating our number as a int or a str at different points in our code may be helpful
+
+
