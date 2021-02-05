@@ -1,4 +1,4 @@
-# Exercise 1 : What Are You Learning ?
+# Exercise 1 : What Are You Learning ? DONE
 # Write a function called display_message() that prints one sentence telling everyone what you are learning about in this chapter.
 # Call the function, and make sure the message displays correctly.
 
@@ -8,17 +8,17 @@
 # display_message()
 
 
-# Exercise 2: What’s Your Favorite Book ?
+# Exercise 2: What’s Your Favorite Book ? DONE
 # Write a function called favorite_book() that accepts one parameter, title.
 # The function should print a message, such as “One of my favorite books is Alice in Wonderland”.
 # Call the function, making sure to include a book title as an argument in the function call.
 
-def favorite_book(book_name):
-    print(f'One of my favorite books is {book_name}')
-favorite_book('Alice in wonderland')    
+# def favorite_book(book_name):
+#     print(f'One of my favorite books is {book_name}')
+# favorite_book('Alice in wonderland')    
 
 
-# Exercise 3 : Some Geography
+# Exercise 3 : Some Geography DONE
 # Write a function called describe_city() that accepts the name of a city and its country.
 # The function should print a simple sentence, such as “Reykjavik is in Iceland”.
 # Give the parameter for the country a default value.
@@ -33,7 +33,7 @@ favorite_book('Alice in wonderland')
 
 
 
-# Exercise 4 : Random
+# Exercise 4 : Random _DONE
 # Create a function that accepts a number between 1 and 100 and generates another number randomly between 1 and 100.
 # Compare the two numbers, if it’s the same number, display a success message to the user, otherwise show a fail message and display both numbers
 
@@ -55,7 +55,7 @@ favorite_book('Alice in wonderland')
 
 
 
-# Exercise 5 : Let’s Create Some Personalized Shirts !
+# Exercise 5 : Let’s Create Some Personalized Shirts ! - DONE
 # Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt.
 # The function should print a sentence summarizing the size of the shirt and the message printed on it.
 # Call the function once using positional arguments to make a shirt.
@@ -75,7 +75,7 @@ favorite_book('Alice in wonderland')
 
 
 
-# Exercise 6 : Magicians …              - STUCK     
+# Exercise 6 : Magicians …          DONE  
 # Make a list of magician’s names.
 # Pass the list to a function called show_magicians(), which prints the name of each magician in the list.
 # Write a function called make_great() that modifies the list of magicians by adding the phrase "the Great" to each magician’s name.
@@ -118,38 +118,38 @@ favorite_book('Alice in wonderland')
 # Display a message to the user informing them whether they can retire or not.
 # As always, test your code to ensure it works.
 
-# def get_age(year, month, day):
+def get_age(year, month, day):
    
-#     current_year = 2021
-#     current_month = 2
-#     current_day = 3
-#     users_age_year = current_year - year 
-#     if current_month > month:
-#         return users_age_year
-#     elif current_month == month:
-#         if current_day > day:
-#             return users_age_year 
-#         else: 
-#             return users_age_year -1
-#     else:
-#         return users_age_year -1
-# print(get_age(1993, 2, 5))
+    current_year = 2021
+    current_month = 2
+    current_day = 3
+    users_age_year = current_year - year 
+    if current_month > month:
+        return users_age_year
+    elif current_month == month:
+        if current_day > day:
+            return users_age_year 
+        else: 
+            return users_age_year -1
+    else:
+        return users_age_year -1
+print(get_age(1993, 2, 5))
 
 
 
-# def can_retire (gender, DOB):
-#     year, month, day = DOB.split('/')               # split the year, month, day at position / into 3 strings
-#     age = get_age(int(year), int(month), int(day))  # age is put into 3 integers year, month year and definied as a variable. 
+def can_retire (gender, DOB):
+    year, month, day = DOB.split('/')               # split the year, month, day at position / into 3 strings
+    age = get_age(int(year), int(month), int(day))  # age is put into 3 integers year, month year and definied as a variable. 
 
-#     if age >= 67 and gender == 'm' or age >= 62 and gender == 'f':  #if age/gender is more or == to retirement age
-#         print('You can retire')
-#     else:                                                           #if users age is less then retirement age
-#         print('Go back to work')  
+    if age >= 67 and gender == 'm' or age >= 62 and gender == 'f':  #if age/gender is more or == to retirement age
+        print('You can retire')
+    else:                                                           #if users age is less then retirement age
+        print('Go back to work')  
 
-# user_gender = input('what is your gender m/f')                      #variable input for gender
-# user_dob = input('what is your DOB: yyyy/mm/dd')                    #variable input DOB
+user_gender = input('what is your gender m/f')                      #variable input for gender
+user_dob = input('what is your DOB: yyyy/mm/dd')                    #variable input DOB
 
-# can_retire(user_gender, user_dob)                                   # call function on gender/age
+can_retire(user_gender, user_dob)                                   # call function on gender/age
 
 
 

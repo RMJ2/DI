@@ -57,3 +57,17 @@ def longest_word(words):
     return longest
         
 print(longest_word(new_list))
+
+
+
+# Exercise 3 : The Alphabet - DONE
+# Create a string of all the letters in the alphabet
+# Loop over each letter and print a message that contains the letter and whether its a vowel or a consonant
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+vowels = "aeiou"
+for letter in alphabet:
+	if letter in vowels:
+		print(letter, "is a vowel")
+	else:
+		print(letter, "is a consonant")
