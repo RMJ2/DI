@@ -52,7 +52,7 @@
    
 
 
-# Exercise 4 : - STUCK
+# Exercise 4 : - DONE
 # names = ['Samus', 'Cortana', 'V', 'Link', 'Mario', 'Cortana', 'Samus']
 # 1. Write a script with the list of names provided. This code should ask the user for input
 # * if the input exists in the list print the index of the first occurence
@@ -103,7 +103,7 @@
 # # print(max(numbers))
 # # print(sum(numbers))
 
-# total = 0                   # sum()
+# total = 0                   # sum() -function, this is it. 
 # for number in numbers: 
 #     total += number
 #     print(total)
@@ -125,10 +125,24 @@
 
 
 
-
 # Exercise 8 : Random Number
 # Accept input from a user if its between 1 and 9 (including).
 # Get a random number between 1 and 9. Hint: random module.
 # Print a message if the user guessed the correct number or not.
 # Bonus: use a menu to let the user keep guessing until he wants to quit
 # Bonus 2: on exit tally up and display total games, wins and losses
+
+import random
+words = int(input('Select a number between 1 - 9: '))
+
+number = random.randrange(1, 10)
+
+num =[]
+
+for num in number:
+    if num == words: 
+        print('You guess correct')
+    else: 
+        print(f'The number was {number}')
+
+

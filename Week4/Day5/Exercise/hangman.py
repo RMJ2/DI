@@ -16,7 +16,7 @@ print('Good Luck', username)
 # step 1. 
 guesses = ''                                # str for letter guesses
 
-turns = 2                                   # number of turns allocated 
+turns = 30                                   # number of turns allocated 
 
 # step 2. 
 

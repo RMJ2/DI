@@ -98,7 +98,7 @@
 # show_magicians(name_list)
 
 
-# Exercise 7: When Will I Retire ?   STUCK
+# Exercise 7: When Will I Retire ?   DONE
 # The point of the exercise is to check is a person can retire depending on his age and his gender.
 # Note : Retirement age in Israel is 67 for men, and 62 for women (born after April, 1947).
 
@@ -118,38 +118,38 @@
 # Display a message to the user informing them whether they can retire or not.
 # As always, test your code to ensure it works.
 
-def get_age(year, month, day):
+# def get_age(year, month, day):
    
-    current_year = 2021
-    current_month = 2
-    current_day = 3
-    users_age_year = current_year - year 
-    if current_month > month:
-        return users_age_year
-    elif current_month == month:
-        if current_day > day:
-            return users_age_year 
-        else: 
-            return users_age_year -1
-    else:
-        return users_age_year -1
-print(get_age(1993, 2, 5))
+#     current_year = 2021
+#     current_month = 2
+#     current_day = 3
+#     users_age_year = current_year - year 
+#     if current_month > month:
+#         return users_age_year
+#     elif current_month == month:
+#         if current_day > day:
+#             return users_age_year 
+#         else: 
+#             return users_age_year -1
+#     else:
+#         return users_age_year -1
+# print(get_age(1993, 2, 5))
 
 
 
-def can_retire (gender, DOB):
-    year, month, day = DOB.split('/')               # split the year, month, day at position / into 3 strings
-    age = get_age(int(year), int(month), int(day))  # age is put into 3 integers year, month year and definied as a variable. 
+# def can_retire (gender, DOB):
+#     year, month, day = DOB.split('/')               # split the year, month, day at position / into 3 strings
+#     age = get_age(int(year), int(month), int(day))  # age is put into 3 integers year, month year and definied as a variable. 
 
-    if age >= 67 and gender == 'm' or age >= 62 and gender == 'f':  #if age/gender is more or == to retirement age
-        print('You can retire')
-    else:                                                           #if users age is less then retirement age
-        print('Go back to work')  
+#     if age >= 67 and gender == 'm' or age >= 62 and gender == 'f':  #if age/gender is more or == to retirement age
+#         print('You can retire')
+#     else:                                                           #if users age is less then retirement age
+#         print('Go back to work')  
 
-user_gender = input('what is your gender m/f')                      #variable input for gender
-user_dob = input('what is your DOB: yyyy/mm/dd')                    #variable input DOB
+# user_gender = input('what is your gender m/f')                      #variable input for gender
+# user_dob = input('what is your DOB: yyyy/mm/dd')                    #variable input DOB
 
-can_retire(user_gender, user_dob)                                   # call function on gender/age
+# can_retire(user_gender, user_dob)                                   # call function on gender/age
 
 
 
@@ -160,3 +160,10 @@ can_retire(user_gender, user_dob)                                   # call funct
 # Hint: treating our number as a int or a str at different points in our code may be helpful
 
 
+
+def one(number):
+    array = int(input('phone number: '))
+
+    for arr in array: 
+        if x d
+    
